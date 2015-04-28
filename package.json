@@ -1,0 +1,40 @@
+{
+  "name": "grunt-cache-busting-updater",
+  "version": "0.0.1",
+  "description": "Grunt plugin to replace cache busting number for external files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnmelton/grunt-cache-busting-updater.git"
+  },
+  "author": {
+    "name": "Shawn Melton"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/shawnmelton/grunt-cache-busting-updater/issues"
+  },
+  "homepage": "https://github.com/shawnmelton/grunt-cache-busting-updater",
+  "files": [
+    "tasks"
+  ],
+  "readme": "grunt-cache-busting-updater\n=================\n\nGrunt plugin to replace cache busting number for external files.",
+  "readmeFilename": "README.md",
+  "_id": "grunt-cache-busting-updater@0.0.1",
+  "_shasum": "0678b2443f5b8ffc9305d9de56cd37d01931a814",
+  "_resolved": "git+https://github.com/shawnmelton/grunt-cache-busting-updater.git#094033f55a721c492d852f40a024b3f9d1c3231a",
+  "_from": "grunt-cache-busting-updater@git+https://github.com/shawnmelton/grunt-cache-busting-updater.git"
+}
