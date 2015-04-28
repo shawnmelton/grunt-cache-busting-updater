@@ -45,8 +45,6 @@ module.exports = function(grunt) {
             validateFile(file);
             replaceCacheBuster(file.src, file.dest);
         });
-
-        grunt.log.writeln('Got to cache busting updater.');
     });
 
 };
