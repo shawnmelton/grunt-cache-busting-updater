@@ -1,6 +1,6 @@
 /**
  * grunt-cache-busting-updater
- * 
+ *
  * Copyright (c) 2015 Shawn Melton
  */
 
@@ -9,6 +9,10 @@
 module.exports = function(grunt) {
 
     grunt.registerMultiTask('cacheBustingUpdater', 'Translate HTML Template', function() {
+
+        var options = this.options() || {};
+
+        var cachebusterValue = options.cachebusterValue || new Date().getTime();
 
         /**
          * Replace cache buster placeholder [CACHEBUSTERTIMESTAMP] with a timestamp
@@ -19,7 +23,8 @@ module.exports = function(grunt) {
         var replaceCacheBuster = function(readFile, writeFile) {
                 grunt.log.writeln('Reading from file: '+ readFile);
                 var contents = grunt.file.read(readFile);
-                grunt.file.write(writeFile, contents.replace(/\[CACHEBUSTERTIMESTAMP\]/g, new Date().getTime()));
+                debugger;
+                grunt.file.write(writeFile, contents.replace(/\[CACHEBUSTERTIMESTAMP\]/g, cachebusterValue));
                 grunt.log.writeln('Writing to file: '+ writeFile);
             },
 
