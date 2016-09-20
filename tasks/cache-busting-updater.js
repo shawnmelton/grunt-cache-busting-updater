@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         var replaceCacheBuster = function(readFile, writeFile) {
                 grunt.log.writeln('Reading from file: '+ readFile);
                 var contents = grunt.file.read(readFile);
-                debugger;
                 grunt.file.write(writeFile, contents.replace(/\[CACHEBUSTERTIMESTAMP\]/g, cachebusterValue));
                 grunt.log.writeln('Writing to file: '+ writeFile);
             },
